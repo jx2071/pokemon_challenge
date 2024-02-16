@@ -1,0 +1,14 @@
+<div>
+  <img [src]="pokemon.image" alt="" width="200px"/>
+  <h2>{{pokemon.name.toUpperCase()}}</h2>
+  <p>ID: {{pokemon.id}}</p>
+  <p>Weight: {{pokemon.weight}}</p>
+  <p>Height: {{pokemon.height}}</p>
+  <p>Types:</p>
+  <ul>
+    <li *ngFor="let type of pokemon.types" [type]="type">
+      {{ type.type.name }}
+    </li>
+  </ul>
+  <button (click)="openDialog()">Select</button>
+</div>

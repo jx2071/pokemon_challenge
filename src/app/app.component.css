@@ -1,0 +1,20 @@
+.title{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: black;
+  color:white;
+  font-size:20px;
+}
+
+div{
+  display: flex;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+
+button{
+  margin-top: 10px;
+  padding: 10px;
+}
